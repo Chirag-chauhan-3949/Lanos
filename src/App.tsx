@@ -1,5 +1,5 @@
 import React from "react";
-import { ChefHat } from "lucide-react";
+import { ChefHat, Mail, Phone } from "lucide-react";
 
 function App() {
   return (
@@ -26,22 +26,42 @@ function App() {
           <h1 className="text-5xl md:text-7xl font-bold mb-4 text-amber-400">
             LANOS
           </h1>
-          <p className="text-lg md:text-xl mb-8">
-            We're crafting something extraordinary. Our website is under
-            construction, but our passion for creating beautiful kitchen spaces
-            never stops.
+          <p className="text-lg md:text-xl mb-2">
+            We're bringing you modular kitchen solutions at a price-friendly
+            range for everyone. Stay tuned as we build something exceptional
           </p>
+          <div className="mb-2">
+            <div className="flex items-center justify-center gap-2">
+              <Phone size={20} className="text-amber-400" />
+              <p>
+                <span className="font-semibold">Phone:</span> +91 7714001442,
+                +91 9589027413
+              </p>
+            </div>
+            <div className="flex items-center justify-center gap-2">
+              <Mail size={20} className="text-amber-400" />
+              <p>
+                <span className="font-semibold">Email:</span>{" "}
+                <a
+                  href="mailto:sales@lanos.in"
+                  className="text-amber-400 hover:underline"
+                >
+                  sales@lanos.in
+                </a>
+              </p>
+            </div>
+          </div>
 
           <div className="bg-black/30 backdrop-blur-sm p-8 rounded-lg">
             {/* Newsletter Signup */}
             <div className="max-w-md mx-auto">
-              <div className="flex gap-2">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <input
                   type="email"
                   placeholder="Enter your email for updates"
-                  className="flex-1 px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-amber-400 bg-white/10 border border-white/20"
+                  className="flex-1 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 bg-white/10 border border-white/20"
                 />
-                <button className="px-6 py-2 bg-amber-400 text-black font-semibold rounded-r-lg hover:bg-amber-300 transition-colors">
+                <button className="px-6 py-2 bg-amber-400 text-black font-semibold rounded-lg sm:rounded-r-lg hover:bg-amber-300 transition-colors">
                   Notify Me
                 </button>
               </div>
