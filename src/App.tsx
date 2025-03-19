@@ -1,17 +1,18 @@
-import React from 'react';
-import { ChefHat } from 'lucide-react';
+import React from "react";
+import { ChefHat } from "lucide-react";
 
 function App() {
   return (
     <div className="min-h-screen relative">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          filter: 'brightness(0.3)'
+          backgroundImage:
+            'url("https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          filter: "brightness(0.3)",
         }}
       />
 
@@ -21,9 +22,16 @@ function App() {
           <div className="flex items-center justify-center mb-6">
             <ChefHat size={48} className="text-amber-400" />
           </div>
-          
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 text-amber-400">LANOS</h1>
-          
+
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 text-amber-400">
+            LANOS
+          </h1>
+          <p className="text-lg md:text-xl mb-8">
+            We're crafting something extraordinary. Our website is under
+            construction, but our passion for creating beautiful kitchen spaces
+            never stops.
+          </p>
+
           <div className="bg-black/30 backdrop-blur-sm p-8 rounded-lg">
             {/* Newsletter Signup */}
             <div className="max-w-md mx-auto">
